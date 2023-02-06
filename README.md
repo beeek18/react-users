@@ -2,7 +2,7 @@
 
 <h4>
 <li>useEffect
-<li>Sending a request to the backend with fetch and rendering this data
+<li>Sending a request to the backend with axios & fetch and rendering this data
 <li>Skeleton using the react-content-loader library
 <li>User search
 <li>Render list of users
