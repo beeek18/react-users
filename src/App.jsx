@@ -1,10 +1,12 @@
 import React from "react";
+
 import axios from "axios";
+
 import "./index.scss";
+
 import { Success } from "./components/Success";
 import { Users } from "./components/Users";
 
-// Тут список пользователей: https://reqres.in/api/users
 
 function App() {
   const [users, setUsers] = React.useState([]);
@@ -13,26 +15,16 @@ function App() {
   const [success, setSuccess] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState("");
 
-  // React.useEffect(() => {
-  //   fetch('https://reqres.in/api/users')
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       setUsers(json.data);
-  //     }).catch(err => {
-  //       console.warn(err);
-  //       alert('Error getting users')
-  //     })
-  //     .finally(() => setLoading(false));
-  // }, []);
-
   React.useEffect(() => {
+    setLoading(true)
+
     axios
       .get("https://63e08d9159bb472a742402db.mockapi.io/users")
-      .then((res) => {
-        setUsers(res.data);
+      .then(({ data }) => {
+        setUsers(data);
       })
       .catch((err) => {
-        console.warn(err);
+        console.log(err);
         alert("Error getting users");
       })
       .finally(() => setLoading(false));
@@ -55,20 +47,23 @@ function App() {
   };
 
   return (
+
     <div className="App">
-      {success ? (
-        <Success count={invites.length} />
-      ) : (
-        <Users
-          onChangeSearchValue={onChangeSearchValue}
-          searchValue={searchValue}
-          items={users}
-          isLoading={isLoading}
-          invites={invites}
-          onClickInvite={onClickInvite}
-          onClickSentInvites={onClickSentInvites}
-        />
-      )}
+      {success ?
+        (
+          <Success count={invites.length} />
+        ) : (
+          <Users
+            onChangeSearchValue={onChangeSearchValue}
+            searchValue={searchValue}
+            items={users}
+            isLoading={isLoading}
+            invites={invites}
+            onClickInvite={onClickInvite}
+            onClickSentInvites={onClickSentInvites}
+          />
+        )
+      }
     </div>
   );
 }

@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <p className='textLeft'>Top</p>
-    <p className='textRigth'>Shueisha</p>
+    <h1 className='textLeft'>Top</h1>
+    <h1 className='textRigth'>Shueisha</h1>
   </React.StrictMode>,
 );
