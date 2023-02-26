@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/users/static/css/main.107d2e22.css",
-    "main.js": "/users/static/js/main.b97f92ea.js",
-    "static/media/success.svg": "/users/static/media/success.b3443e51d918853b95f9a95d73e420ea.svg",
-    "static/media/plus.svg": "/users/static/media/plus.1931cf72fa3019e723886b136ffe0eee.svg",
-    "static/media/minus.svg": "/users/static/media/minus.494f644a0286985edebe0fb3f79390a0.svg",
-    "index.html": "/users/index.html",
-    "main.107d2e22.css.map": "/users/static/css/main.107d2e22.css.map",
-    "main.b97f92ea.js.map": "/users/static/js/main.b97f92ea.js.map"
+    "main.css": "/react-users/static/css/main.107d2e22.css",
+    "main.js": "/react-users/static/js/main.699ca528.js",
+    "static/media/success.svg": "/react-users/static/media/success.b3443e51d918853b95f9a95d73e420ea.svg",
+    "static/media/plus.svg": "/react-users/static/media/plus.1931cf72fa3019e723886b136ffe0eee.svg",
+    "static/media/minus.svg": "/react-users/static/media/minus.494f644a0286985edebe0fb3f79390a0.svg",
+    "index.html": "/react-users/index.html",
+    "main.107d2e22.css.map": "/react-users/static/css/main.107d2e22.css.map",
+    "main.699ca528.js.map": "/react-users/static/js/main.699ca528.js.map"
   },
   "entrypoints": [
     "static/css/main.107d2e22.css",
-    "static/js/main.b97f92ea.js"
+    "static/js/main.699ca528.js"
   ]
 }
