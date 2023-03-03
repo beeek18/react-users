@@ -19,7 +19,7 @@ function App() {
     setLoading(true)
 
     axios
-      .get("https://63e08d9159bb472a742402db.mockapi.io/users")
+      .get("https://63d0153a10982404378ccc77.mockapi.io/users")
       .then(({ data }) => {
         setUsers(data);
       })
