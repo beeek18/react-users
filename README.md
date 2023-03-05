@@ -6,6 +6,6 @@
 <li>Skeleton using the react-content-loader library
 <li>User search
 <li>Render list of users
-<li>Spread-оператор
+<li>Spread-operator 
 <li>Adding/Removing Users from the Array of Invites
 <li>Display information about downloading content
