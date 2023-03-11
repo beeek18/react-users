@@ -1,4 +1,4 @@
-<h1> User's 👥
+<h1> Users 👥
 
 <h4>
 <li>useEffect
